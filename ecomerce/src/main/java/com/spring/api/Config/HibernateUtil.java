@@ -32,6 +32,7 @@ public class HibernateUtil {
 				
 				settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
 				settings.put(Environment.SHOW_SQL, "true");
+//				settings.put(Environment.PHYSICAL_NAMING_STRATEGY, "org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl");
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 				//settings.put(Environment.HBM2DDL_AUTO, "create-drop");
 				configuration.setProperties(settings);

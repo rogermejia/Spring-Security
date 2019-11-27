@@ -45,7 +45,7 @@ public class RoleOptions implements Serializable {
 
 	@JoinColumn(name = "idRole", referencedColumnName = "idRole", insertable = false, updatable = false)
 	@ManyToOne
-	private Role roleobj;
+	private Role roleobj2;
 
 	@JoinColumn(name = "idOptionss", referencedColumnName = "idOptionss", insertable = false, updatable = false)
 	@ManyToOne

@@ -33,7 +33,7 @@ public class Role implements Serializable {
 	@OneToMany(mappedBy = "roleobj", fetch = FetchType.EAGER)
 	private Set<UsersRole> listUsersRole = new HashSet<UsersRole>();
 	
-	@OneToMany(mappedBy = "roleobj", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "roleobj2", fetch = FetchType.EAGER)
 	private Set<RoleOptions> listRoleOptions;
 
 	public Role(Long idRole, String role, boolean status) {

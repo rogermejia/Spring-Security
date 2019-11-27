@@ -40,6 +40,7 @@ public class AppConfig {
     props.setProperty(C3P0_MAX_SIZE, "20");
     props.setProperty(C3P0_ACQUIRE_INCREMENT, "1");
     props.setProperty(C3P0_TIMEOUT, "1800");
+    props.setProperty(PHYSICAL_NAMING_STRATEGY, "org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl");
     props.setProperty(C3P0_MAX_STATEMENTS, "150");
     
     factoryBean.setHibernateProperties(props);
